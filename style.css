@@ -1,0 +1,103 @@
+*{
+   padding: 0%;
+   margin: 0%;
+} 
+
+ body{
+   background-image: url("room.jpg");
+   background-size: cover;
+   
+   } 
+
+.totform{
+   width: 400px; 
+   /* background-color: rgb(255, 255, 255); */
+   /* border: 5px solid red; */
+   /* margin: 60px auto; */
+   margin: auto;
+   /* margin-top: 50%; */
+   /* border-radius: 8px; */
+}
+.letterstyle{
+   text-align: center;
+   margin-top: 20px;
+}
+.letterstyle h2{
+   margin-top: 15px;
+   /* font-weight: 200; */
+   font-family:Arial, Helvetica, sans-serif;
+}
+.letterstyle p{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 15px;
+}
+
+.input input{
+   display: block;
+   margin: 10px;
+   margin-left: 5%;
+   width: 90%;
+   box-sizing: border-box;
+   border-radius: 10px;
+   padding: 10px;
+   border-color: rgb(0, 0, 0, .4);
+   /* letter-spacing: 2px; */
+   font-weight: 600;
+   cursor: pointer;
+   
+
+}
+input:focus{
+   background-color: aliceblue;
+}
+.btn{
+   text-align: center;
+      
+   
+}
+button{
+   padding: 10px;
+   border-radius: 20px;
+   width: 90%;
+   background-color: red;
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.exitacc{
+   margin-top: 10px;
+   border-color: rgb(0, 0, 0, .2);
+   background-color:gainsboro;
+   color: black;
+   
+}
+
+#lstpara{
+   margin: 10px auto 20px;
+   text-align: center;
+   /* word-spacing: 1px; */
+}
+#lstpara a{
+   color: black;
+   text-decoration: none;
+   /* font-family:Arial, Helvetica, sans-serif; */
+}
+
+
+/* app.post('/result',function(req,res)
+{
+    
+    var email=req.body.email;
+    var pass=req.body.pwd;
+    var age=req.body.age;
+
+    var data={
+        'Email':email,
+        'Password':pass,
+        'Age':age
+    }
+    db.collection('details').insertOne(data,function(req,res){});
+    
+    // res.send("success")
+}) */

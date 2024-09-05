@@ -1,0 +1,495 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.nav-div img{
+    /* background-image: url(imges/nav-img.jfif); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.bar{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+.bar h1{
+    /* border: 2px solid green; */
+    width: 20%;
+    font-size: 35px;
+    text-align: center;
+    color: red;
+}
+.bar ul{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.bar ul li{
+    display: inline-flex;
+    /* border: 2px solid blue; */
+}
+.bar ul li #none{
+    display: none;
+}
+ul li a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    /* border: 2px solid green; */
+}
+ul li a:hover{
+    color: brown;
+}
+.search-icon{
+    /* border: 2px solid yellow; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.search-icon #check{
+    display: none;
+}
+.search-icon #check:checked+#check-input{
+    display: block;
+}
+
+.search-icon #check-input{
+    display: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.search-icon #search-icon-lable{
+    /* border: 2px solid red; */
+    font-size: 20px;
+}
+
+.search-icon a{
+    /* border: 2px solid green; */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    /* border: 2px solid orange; */
+}
+
+.bar #label .lab-div{
+    width: 28px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 5px;
+    
+}
+#check-menu,#label{
+    display: none;
+}
+
+/*............. service page.......... */
+.ser-main{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 100px;
+}
+.ser-main h2,.p{
+    /* border: 2px solid green; */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ser-main .icon{
+    color: gold;
+    /* border: 5px solid rgb(17, 0, 255); */
+    width: 80%;
+    display: flex;
+    margin: 50px auto ;
+    /* text-align: center; */
+   
+
+}
+.icon p{
+    /* border: 2px solid gold; */
+    margin: 15px auto 15px auto;
+    padding: 5px;
+    overflow: hidden;
+    color: black;
+    line-height: 1.5em;
+    /* max-height: 150px; */
+    height: 180px;
+}
+.icon .border{
+    /* border: 5px solid hotpink; */
+    text-align: center;
+    /* width: 20%; */
+    height: 300px;
+    /* padding-top: 30px; */
+    margin-top: 5%;
+}
+.icon .center{
+    /* text-align: center; */
+    font-size: 30px;
+    font-weight: 600;
+    /* border: 2px solid blue; */
+}
+.ser-main .icon h3{
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.icon button{
+    background-color: gold;
+    padding: 10px;
+    border: 2px solid gold;
+    color: white;
+}
+
+/*................... about page.............. */
+
+.ab-main{
+    border: 2px solid gold;
+    width: 100%;
+    background-color: gold;
+    margin-top: 100px;
+}
+.ab-main .content{
+    /* border: 2px solid blue; */
+    color: white;
+    margin: 30px;
+    padding: 15px;
+    display: flex;
+    font-weight: 800;
+
+}
+.content .content-one{
+    /* border: 2px solid #663399; */
+    /* padding: 20px auto auto ; */
+    padding-top: 20px;
+    padding-left: 50px;
+    width: 50%;
+}
+
+.content-one p{
+    /* margin-top: 25px; */
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: 25px 80px auto auto;
+    /* border: 2px solid blue;  */
+    
+}
+.content-one .ab-btn{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    /* text-align: center; */
+}
+.content .content-two-img{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.content-two-img img{
+    border: 2px solid green;
+    height: 350px;
+    background-image: url(imges/about-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 80px;
+    width: 100%;
+    /* background-position-y: center; */
+}
+
+/* ............shop page.......... */
+.shop-main{
+    margin-top: 100px;
+}
+.shop-main h1,#p{
+    text-align: center;
+    margin-top: 15px;
+}
+.shop-designs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px ;
+     /* border: 2px solid red; */
+     width: 100%;
+     margin-top: 20px;
+     /* justify-content: center; */
+}
+
+.shop-designs .shop-same{
+    border: 2px solid grey;
+    /* display: flex; */
+    text-align: center;
+}
+
+.shop-same button{
+    margin-top: 15px;
+    padding: 8px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: goldenrod;
+}
+
+.shop-same img{
+    width: 100%;
+    height: 250px;
+    min-height: 200px;
+    padding: 15px;
+    /* margin-top: 80px; */
+}
+
+/* ..........contact page.......... */
+
+.cont-main {
+    position: relative; 
+    overflow: hidden;
+    /* color: white; */
+    margin-top: 100px;
+}
+
+/* Pseudo-element for background image with transparency */
+.cont-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(imges/contact-img.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /*Place it behind the content*/
+}
+.cont-main h1{
+    text-align: center;
+    color: white;
+    
+}
+.cont-main .p{
+    font-weight: 800;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    /* margin-left: 200px; */
+    padding-left: 200px;
+    padding-right: 200px;
+    /* border: 2px solid red; */
+}
+
+.cont-main .flex{
+    display: flex;
+    margin-top: 20px;
+   
+}
+.flex .icon{
+    width: 50%;
+    /* border: 2px solid red; */
+    /* height: 200px; */
+}
+.icon .common{
+    /* border: 2px solid blue; */
+    height: 120px;   
+}
+.common i{
+    margin-left: 10px;
+    font-size: 17px;
+    background-color: white;
+    border-radius: 50%;
+    border: 12px solid white;
+}
+.common h4{
+    /* border: 2px solid orange; */
+    display: inline-block;
+    color: aqua;
+    font-weight: 800;
+    margin-left: 10px;
+
+}
+.common .icon-p{
+    /* border: 2px solid rgb(255, 0, 170); */
+    color: white;
+    margin-top: 0%;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-weight: 700;
+    /* height: 120px; */
+}
+
+.flex .form{
+    width: 50%;
+    /* border: 2px solid red; */
+    
+}
+.form form{
+    /* border: 5px solid blue; */
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border: 5px solid white;
+    height: 100%;
+    padding: 30px;
+    
+}
+
+.form h2{
+    display: inline-block;
+    /* border: 5px solid yellow; */
+}
+
+form .block{
+    display: block;
+    margin-top: 20px;
+    border: none;
+    padding: 18px;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+form .form-btn{
+    background-color: aqua;
+    padding: 10px;
+    width: 80px;
+    margin-top: 20px;
+    border: 2px solid aqua;
+    font-weight:600;
+    color: white;
+    font-size: 15px;
+}
+
+/* .............media query............ */
+
+@media screen and (max-width:768px){
+    .bar ul{
+        position: absolute;
+        width:100% ;
+        top: 10vh;
+        left:-1000px;
+        display: block;
+        height: 100vh;
+        background-color: black;
+        transition: all 2s 0s linear ;
+        /* background-color: red; */
+  
+    } 
+    .bar .search-icon{
+        display: none;
+    }  
+    .bar #check-menu:checked+ul{
+        left:0px;
+        
+       
+        
+    }
+
+    .bar ul li{
+        /* display: grid; */
+        text-align: center;
+        /* justify-content: center; */
+        margin-top: 50px;
+        display: block;
+        /* border: 2px solid red; */
+
+    }
+    ul li a{
+        color: white;
+        display: block;
+    }
+    .bar h1{
+        /* border: 5px solid red; */
+        width: 80%;
+        padding-left: 35px;
+        text-align: left;
+        /* font-size: 30px; */
+    }
+    .bar #label{
+        display: block;
+        /* border: 5px solid red; */
+        width: 20%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /*......... service page.......... */
+
+    .ser-main .icon{
+        display: block;
+    }
+    .icon p{
+        padding: 0%;
+        height: auto;
+    }
+    .icon .border{
+        height: auto;
+        margin-top: 50px;
+        /* border: #663399 2px solid; */
+    }
+
+    /*......... about page.......... */
+    .ab-main .content{
+        display: block;
+        padding: 0%;
+        margin: 0%; 
+    }
+    .content .content-one{
+        width: 100%;
+        padding: 0%;
+        /* border: #995c33 2px solid; */
+    }
+    .content .content-two-img{
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .content-one p{
+        margin: auto;
+        margin-top: 20px;
+        /* border: #339944 2px solid; */
+    }
+    .content-one .ab-btn{
+        margin-left: 10px;       
+    }
+    /* ............shop page........ */
+
+    .shop-designs{
+        display: block;
+        gap: auto;
+        
+    }
+    
+    /* ..........contact page........... */
+    .cont-main .flex{
+        display: block;
+    }
+    .flex .icon{
+        width: auto;
+    }
+    .flex .form{
+        width: auto;
+    }
+    .form form{
+        margin:auto
+    }
+    .cont-main .p{
+        padding: 0%;
+       
+    }
+    .icon .common{
+        height: auto;
+    }
+    .common .icon-p{
+        padding-right: 0%;
+    }
+}
+    
